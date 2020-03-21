@@ -1,13 +1,287 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Abel', sans-serif;
+  
+}
+
+body::-webkit-scrollbar {
+  width: 1.5em;
+}
+  
+body::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+  outline: 1px solid slategrey;
+  border-radius: 20px;
+}
+
+:root {
+  --orange: rgb(255, 70, 58);
+  --green: rgb(84, 255, 184);
+  --neon: greenyellow;
+  --black: #2b2b2b;
+}
+
+/* Utility */
+
+a {
+  text-decoration: none;
+}
+.toggler {
+  border: none!important;
+}
+
+.beats, .artist, .producer {
+  color: var(--black);
+  font-size: 5em;
+  font-style: oblique;
+  font-weight: bolder;
+  margin-top: -10%;
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  padding: .5rem 1.5rem;
+  width: 100%;
+}
+
+.link {
+  color: var(--black)!important;
+  font-size: 3em;
+  font-style: oblique;
+  font-weight: bolder;
+}
+h2 {
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+.far, .fab {
+  margin: .25rem
+}
+
+/* NavBar */
+
+.nav_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: sticky;
+  top: 0;
+  margin: .5rem;
+  z-index: 2;
+}
+
+.nav .brand_link {
+  border: 5px solid black;
+  font-size: 2.5em!important;
+  font-style: oblique;
+  font-weight: bolder;
+  text-align: center;
+  width: 20%;
+  background: var(--orange)
+}
+.nav .brand_link:hover {
+  border: 5px solid transparent;
+  transform: rotate(-10deg);
+}
+
+.nav .nav_search {
+  margin-left: 25rem;
+  width: 50%;
+}
+
+.mobile_link {
+  display: none;
+}
+
+
+/* Dashboard */
+
+/* header marquee section */
+
+.header .main {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2rem;
+  padding: .5rem;
+  align-items: center;
+  border: 5px solid black
+}
+
+/* main page container */
+
+.showcase {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+  height: 120vh;
+  grid-gap: 2rem;
+  margin: 5rem; 
+  background: var(--orange)
+}
+
+.showcase .first {
+  padding: 2rem;
+  position: relative;
+  background: white;
+  height: 500px;
+}
+
+/* first */
+.showcase .first .showcase_btn1 {
+  height: 150px;
+  width: 150px;
+
+}
+.showcase .first .showcase_btn2 {
+  margin-left: 15%;
+  height: 150px;
+  width: 150px;
+}
+
+/* second */
+.showcase .second {
+  border: 5px solid;
+  padding: 2rem;
+  position: relative;
+}
+.showcase .second .showcase_btn3 {
+  height: 150px;
+  width: 150px;
+  background: var(--green);
+}
+.showcase .second .showcase_btn4 {
+  margin-left: 15%;
+  height: 150px;
+  width: 150px;
+  background: var(--orange)
+}
+
+/* third */
+.showcase .third {
+  border: 5px solid;
+  padding: 2rem;
+  position: relative;
+}
+.showcase .third .showcase_btn5 {
+  height: 150px;
+  width: 150px;
+  background: var(--green);
+}
+.showcase .third .showcase_btn6 {
+  margin-left: 15%;
+  height: 150px;
+  width: 150px;
+  background: var(--orange)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+#bottom {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 2.5rem;
+  color: var(--black);
+  font-size: 1.5em;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
+
+#bottom .column1 {
+
+  padding: 1rem;
+  margin: 1rem;
+}
+#bottom .column2 {
+
+  padding: 1rem;
+  margin: 1rem;
+}
+#bottom .column3 {
+
+  padding: 1rem;
+  margin: 1rem;
+}
+#bottom .column4 {
+
+  padding: 1rem;
+  margin: 1rem;
+}
+#bottom .column5 {
+
+  padding: 1rem;
+  margin: 1rem;
+}
+
+
+/* recipe card */
+.recipe_card {
+  display: grid;
+  margin: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10rem;
+  background: none;
+  border: none;
+  font-size: 2em;
+  font-style: oblique;
+  font-weight: bolder;
+  
+}
+.recipe_image {
+ height: 400px;
+ width: 400px;
+}
+
+.recipe_card .recipe_section {
+  border: 5px solid black;
+  background: var(--green);
+  height: 400px;
+  width: 400px;
+  overflow: scroll !important;
+
+}
+
+.recipe_card .recipe_section::-webkit-scrollbar {
+  color: black;
+
+}
+.recipe_card .recipe_section::-webkit-scrollbar-corner {
+  background: var(--green);
+}
+
+.recipe_card .recipe_section::-webkit-scrollbar-thumb{
+  border-radius: 20px;
+    -webkit-box-shadow: inset 0 0 0 1000px; 
 }
