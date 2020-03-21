@@ -146,44 +146,29 @@ h2 {
   width: 150px;
 }
 
-/* second */
-.showcase .second {
+.recipe_form_card {
+  display: grid;
+  grid-template-columns: 3fr 3fr 1fr;
+  margin: auto;
+  padding: 1rem;
+  width: 75%;
   border: 5px solid;
-  padding: 2rem;
-  position: relative;
 }
-.showcase .second .showcase_btn3 {
-  height: 150px;
-  width: 150px;
-  background: var(--green);
-}
-.showcase .second .showcase_btn4 {
-  margin-left: 15%;
-  height: 150px;
-  width: 150px;
-  background: var(--orange)
+.recipe_input {
+  padding: .5rem;
+  margin: 1rem;
 }
 
-/* third */
-.showcase .third {
+.recipe_form_card .recipe_form_display {
   border: 5px solid;
-  padding: 2rem;
-  position: relative;
+  margin: 1rem;
+  margin-left: 25%;
+  width: 400px;
+  font-size: 2.5em!important;
+  font-style: oblique;
+  font-weight: bolder;
+  text-align: center;
 }
-.showcase .third .showcase_btn5 {
-  height: 150px;
-  width: 150px;
-  background: var(--green);
-}
-.showcase .third .showcase_btn6 {
-  margin-left: 15%;
-  height: 150px;
-  width: 150px;
-  background: var(--orange)
-}
-
-
-
 
 
 
@@ -209,40 +194,34 @@ h2 {
 /* footer */
 
 #bottom {
-  display: grid;
-  grid-template-columns: auto;
-  grid-gap: 2.5rem;
-  color: var(--black);
-  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  font-weight: bolder;
+  height: 100%;
+  padding: 0 2rem;
+  /* Overlay */
+  top: 65px;
+  left:0;
+  right: 0;
+  bottom: 0;
 }
 
 #bottom .column1 {
-
-  padding: 1rem;
-  margin: 1rem;
+  padding: .75rem;
 }
 #bottom .column2 {
-
-  padding: 1rem;
-  margin: 1rem;
+  padding: .75rem;
 }
 #bottom .column3 {
-
-  padding: 1rem;
-  margin: 1rem;
+  padding: .75rem;
 }
 #bottom .column4 {
-
-  padding: 1rem;
-  margin: 1rem;
+  padding: .75rem;
 }
 #bottom .column5 {
-
-  padding: 1rem;
-  margin: 1rem;
+  padding: .75rem;
 }
 
 
@@ -284,4 +263,63 @@ h2 {
 .recipe_card .recipe_section::-webkit-scrollbar-thumb{
   border-radius: 20px;
     -webkit-box-shadow: inset 0 0 0 1000px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* second */
+.showcase .second {
+  border: 5px solid;
+  padding: 2rem;
+  position: relative;
+}
+.showcase .second .showcase_btn3 {
+  height: 150px;
+  width: 150px;
+  background: var(--green);
+}
+.showcase .second .showcase_btn4 {
+  margin-left: 15%;
+  height: 150px;
+  width: 150px;
+  background: var(--orange)
+}
+
+/* third */
+.showcase .third {
+  border: 5px solid;
+  padding: 2rem;
+  position: relative;
+}
+.showcase .third .showcase_btn5 {
+  height: 150px;
+  width: 150px;
+  background: var(--green);
+}
+.showcase .third .showcase_btn6 {
+  margin-left: 15%;
+  height: 150px;
+  width: 150px;
+  background: var(--orange)
 }

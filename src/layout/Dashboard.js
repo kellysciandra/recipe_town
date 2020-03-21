@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Recipe from '../recipes/Recipe.js'
+import SubmitRecipe from '../recipes/SubmitRecipe.js'
 
 class Dashboard extends Component {
   render() {
@@ -14,23 +15,12 @@ class Dashboard extends Component {
 
         {/* main page container */}
         <section className='showcase'>
-        <a href='/beats'><h1 className='beats'>--- Recipe ---</h1></a>
+        <a href='/beats'><h1 className='beats'>--- Recipe's ---</h1></a>
           <div className='first'>
             <Recipe/>
           </div>
-
-          {/* <div className='second'>
-          <div className='showcase_btn3'><a href='/login'><h1 className='artist'>artist</h1></a></div>
-          <div className='showcase_btn4'></div>
-         
-          </div>
-
-          <div className='third'>     
-          <div className='showcase_btn5'><a href='/login'><h1 className='producer'>producer</h1></a></div>
-          <div className='showcase_btn6'></div> */}
-    
-          {/* </div> */}
         </section>
+        <SubmitRecipe />
       </div>
     );
   }

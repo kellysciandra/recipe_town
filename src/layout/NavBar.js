@@ -20,8 +20,8 @@ const NavBar = (props) => {
           <Collapse isOpen={!collapsed} navbar>
             <Nav navbar>
               <NavItem>
-              <NavLink href='/newrecipe' className='link'>submit recipe</NavLink>
-              <NavLink href='/chefs' className='link'>ask a chef</NavLink> 
+              <NavLink href='/submitrecipe' className='link'>submit recipe</NavLink>
+              <NavLink href='/askchef' className='link'>ask a chef</NavLink> 
               </NavItem>
             </Nav>
           </Collapse>
@@ -29,7 +29,7 @@ const NavBar = (props) => {
             <Input className='nav_search' type="search" placeholder="search">search</Input>
           </Form> */}
         <NavbarBrand href='/' className='brand_link'> 
-        Recipe Town
+        Really Good
         <NavLink href='/newrecipe' className='mobile_link'>submit recipe</NavLink>
          <NavLink href='/chefs' className='mobile_link'>ask a chef</NavLink> 
         </NavbarBrand> 

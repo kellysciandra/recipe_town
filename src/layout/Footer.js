@@ -8,23 +8,21 @@ class Footer extends Component {
             <div id='bottom'>
                 <Nav>
                     <NavItem className='column1'><br></br>
-                        recipeTown
-                        <NavLink className='footer_link' href="#">terms and conditions</NavLink>
+                        reallygood_recipes
+                        
                     </NavItem>
 
                     <NavItem className='column2'><br></br>
                         chefs
-                        <NavLink className='footer_link' href="#">services</NavLink>
+                      
                     </NavItem>
 
                     <NavItem className='column4'><br></br>
-                        follow us 
-                        <NavLink className='footer_link' href="#">instagram</NavLink>
-                        <NavLink className='footer_link' href="#">spotify</NavLink>
+                        instagram
                     </NavItem>
 
                     <NavItem className='column5'><br></br>
-                        @2020 recipeTown, inc. 
+                        @2020 reallygood, inc. 
                         
                     </NavItem>
                 </Nav>
