@@ -25,12 +25,18 @@ const NavBar = (props) => {
               </NavItem>
             </Nav>
           </Collapse>
-              <NavLink href='/newrecipe' className='mobile_link'>submit recipe</NavLink>
-              <NavLink href='/chefs' className='mobile_link'>ask a chef</NavLink> 
           {/* <Form>
             <Input className='nav_search' type="search" placeholder="search">search</Input>
           </Form> */}
-        <NavbarBrand href='/' className='brand_link'> Recipe Town</NavbarBrand>   
+        <NavbarBrand href='/' className='brand_link'> 
+        Recipe Town
+        <NavLink href='/newrecipe' className='mobile_link'>submit recipe</NavLink>
+         <NavLink href='/chefs' className='mobile_link'>ask a chef</NavLink> 
+        </NavbarBrand> 
+
+      
+     
+       
       </Navbar>
     </div>
   );

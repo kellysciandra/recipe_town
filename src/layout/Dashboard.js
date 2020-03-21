@@ -8,7 +8,7 @@ class Dashboard extends Component {
         {/* header marquee section */}
         <header className="header">
           <div className="main">
-            <marquee><h1>BlahBlah BlahBlah BlahBlah BlahBlah  BlahBlah BlahBlah</h1></marquee>
+            <marquee><h1>today's recipe is brought to you by: andrew f.</h1></marquee>
           </div>
         </header>
 
