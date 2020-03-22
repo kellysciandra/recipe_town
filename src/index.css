@@ -40,15 +40,17 @@ a {
   font-size: 5em;
   font-style: oblique;
   font-weight: bolder;
-  margin-top: -10%;
+
   text-align: center;
 }
 
 .btn {
-  border: none;
-  color: #fff;
+  background: none;
   padding: .5rem 1.5rem;
   width: 100%;
+}
+.btn:hover {
+  background: var(--orange)
 }
 
 .link {
@@ -61,6 +63,16 @@ h2 {
   font-weight: 900;
   font-size: 1.5em;
 }
+h3 {
+  text-align: center;
+  justify-content: center;
+  font-weight: 1000;
+  font-size: 5em;
+  border: 5px dotted var(--orange);
+  width: 50%;
+  margin: auto;
+  padding: 1rem
+}
 
 .far, .fab {
   margin: .25rem
@@ -68,13 +80,14 @@ h2 {
 
 /* NavBar */
 
-.nav_container {
+#navbar {
   display: grid;
   grid-template-columns: 1fr;
   position: sticky;
   top: 0;
   margin: .5rem;
   z-index: 2;
+  
 }
 
 .nav .brand_link {
@@ -109,7 +122,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr;
   margin: 2rem;
-  padding: .5rem;
+  padding: .25rem;
   align-items: center;
   border: 5px solid black
 }
@@ -148,7 +161,7 @@ h2 {
 
 .recipe_form_card {
   display: grid;
-  grid-template-columns: 3fr 3fr 1fr;
+  grid-template-columns: 3fr 3fr;
   margin: auto;
   padding: 1rem;
   width: 75%;
@@ -157,12 +170,13 @@ h2 {
 .recipe_input {
   padding: .5rem;
   margin: 1rem;
+  width: 75%
 }
 
 .recipe_form_card .recipe_form_display {
   border: 5px solid;
   margin: 1rem;
-  margin-left: 25%;
+  margin: auto;
   width: 400px;
   font-size: 2.5em!important;
   font-style: oblique;
@@ -171,8 +185,29 @@ h2 {
 }
 
 
+.ask_form_card {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  margin: auto;
+  padding: 2rem;
+  width: 75%;
+  border: 5px solid;
+}
+.ask_input {
+  padding: .5rem;
+  margin: 1rem;
+  width: 75%
+}
 
-
+.ask_form_card .ask_form_display {
+  border: 5px solid;
+  margin: auto;
+  width: 400px;
+  font-size: 2.5em!important;
+  font-style: oblique;
+  font-weight: bolder;
+  text-align: center;
+}
 
 
 
@@ -201,6 +236,7 @@ h2 {
   align-items: center;
   height: 100%;
   padding: 0 2rem;
+  margin-top: 5%;;
   /* Overlay */
   top: 65px;
   left:0;

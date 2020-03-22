@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Recipe from '../recipes/Recipe.js'
 import SubmitRecipe from '../recipes/SubmitRecipe.js'
+import AskChef from '../recipes/AskChef.js'
 
 class Dashboard extends Component {
   render() {
@@ -20,7 +21,8 @@ class Dashboard extends Component {
             <Recipe/>
           </div>
         </section>
-        <SubmitRecipe />
+        <SubmitRecipe /><br></br>
+        <AskChef />
       </div>
     );
   }

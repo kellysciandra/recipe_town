@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, Input, NavLink, FormGroup  } from 'reactstrap';
+import { Form, Input, NavLink, FormGroup, Button  } from 'reactstrap';
 
 
 class SubmitRecipe extends Component {
@@ -25,7 +25,8 @@ class SubmitRecipe extends Component {
 
   render() {
     return (
-      <div>
+      <div id="recipe">
+        <h3>submit a recipe</h3><br></br><br></br>
         <div className='recipe_form_card'>
             <Form className=''>
             <Input onChange={this.handleChange} className='recipe_input' placeholder="name"  id='name' bsSize="lg" />
@@ -33,6 +34,7 @@ class SubmitRecipe extends Component {
             <Input onChange={this.handleChange}className='recipe_input'placeholder="instagram" id='instagram' bsSize="lg" />
             <Input onChange={this.handleChange} className='recipe_input'placeholder="recipe name" id='recipe_name' bsSize="lg" />
             <Input onChange={this.handleChange} className='recipe_input'placeholder="ingredient" id='ingredient' bsSize="lg" />
+            <Button className='ask_input btn' color="secondary">submit</Button>
            </Form>
            <section className='recipe_form_display'>
               {this.state.name}<br></br>

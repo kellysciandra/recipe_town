@@ -26,7 +26,7 @@ class Recipe extends Component {
               <span>
               <i class="fab fa-instagram"></i>
                 </span><br></br>
-            <small className="text-muted">Last updated 3 mins ago</small>
+            <small className="text-muted_update">Last updated 3 mins ago</small>
           </CardText>
           </section> 
       </Card>

@@ -11,17 +11,18 @@ const NavBar = (props) => {
 
   // const links = (props.artist.id) ? <SignedInLinks />
   //       : <SignedOutLinks />
-
+  const closeNav = () => setCollapsed(collapsed);
 
   return (
-    <div className='nav_container'>  
+    <div id='navbar'>  
       <Navbar className='nav' light>
         <NavbarToggler onClick={toggleNavbar} className='toggler'/>
           <Collapse isOpen={!collapsed} navbar>
             <Nav navbar>
               <NavItem>
-              <NavLink href='/submitrecipe' className='link'>submit recipe</NavLink>
+              <NavLink onClick={console.log('click')} href='/submitrecipe' className='link'>submit recipe</NavLink>
               <NavLink href='/askchef' className='link'>ask a chef</NavLink> 
+              <NavLink href='/askchef' className='link'>cook/book</NavLink> 
               </NavItem>
             </Nav>
           </Collapse>
@@ -30,24 +31,15 @@ const NavBar = (props) => {
           </Form> */}
         <NavbarBrand href='/' className='brand_link'> 
         Really Good
-        <NavLink href='/newrecipe' className='mobile_link'>submit recipe</NavLink>
-         <NavLink href='/chefs' className='mobile_link'>ask a chef</NavLink> 
+        <NavLink href='#recipe' className='mobile_link'>submit a recipe</NavLink> 
+        <NavLink href='#ask' className='mobile_link'>ask a chef</NavLink> 
         </NavbarBrand> 
-
-      
-     
-       
+        
       </Navbar>
     </div>
   );
 }
 
-
-// const mapStateToProps = state => {
-//   return {
-//     artist: state.auth.artist
-//   }
-// }
 
 
 export default NavBar
