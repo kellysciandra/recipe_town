@@ -22,7 +22,7 @@ const NavBar = (props) => {
               <NavItem>
               <NavLink onClick={console.log('click')} href='/submitrecipe' className='link'>submit recipe</NavLink>
               <NavLink href='/askchef' className='link'>ask a chef</NavLink> 
-              <NavLink href='/askchef' className='link'>cook/book</NavLink> 
+              <NavLink href='/cookbook' className='link'>cook/book</NavLink> 
               </NavItem>
             </Nav>
           </Collapse>
