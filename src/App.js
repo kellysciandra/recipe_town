@@ -12,6 +12,7 @@ import Footer from './layout/Footer'
 import SubmitRecipe from './recipes/SubmitRecipe.js'
 import AskChef from './recipes/AskChef.js'
 import CookBook from './recipes/CookBook.js'
+import Test from './recipes/Test.js'
 
 //history
 import history from './history'
@@ -26,6 +27,7 @@ function App() {
           <Route exact path="/submitrecipe" component={SubmitRecipe}/>
           <Route exact path="/askchef" component={AskChef}/>
           <Route exact path="/cookbook" component={CookBook}/>
+          <Route exact path="/test" component={Test}/>
           <Footer />
         </Router>
 

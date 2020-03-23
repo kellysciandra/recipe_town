@@ -230,6 +230,8 @@ h3 {
   height: 400px;
   width: 400px;
   margin: 5rem;
+  border: 10px solid;
+  border-radius: 100%;;
 }
 
 .cookbook_card .section1 {

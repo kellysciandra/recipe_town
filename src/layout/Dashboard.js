@@ -10,7 +10,7 @@ class Dashboard extends Component {
         {/* header marquee section */}
         <header className="header">
           <div className="main">
-            <marquee><h1>today's recipe is brought to you by: andrew f.</h1></marquee>
+            <marquee><h1>todays recipe is brought to you by @andrewF</h1></marquee>
           </div>
         </header>
 
