@@ -190,7 +190,6 @@ h4 {
   text-align: center;
 }
 
-
 .ask_form_card {
   display: grid;
   grid-template-columns: 3fr 3fr;
@@ -217,7 +216,6 @@ h4 {
 
 
 /* cookbook section */
-
 
 .cookbook_card {
   display: grid;
@@ -256,11 +254,21 @@ h4 {
   display: grid;
   grid-template-columns: 1fr;
   padding: 1rem;
-  width: 75%;
   margin: auto;
   margin-top: -10%;
   font-size: 1.25em!important;
 }
+
+.cookbook_card .section11_pbpie {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  margin: auto;
+  margin-top: -10%;
+  font-size: 1.25em!important;
+}
+
+
 .cookbook_card .section12 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -269,13 +277,35 @@ h4 {
   margin-top: -10%;
   font-size: 1.25em!important;
 }
+
 .cookbook_card .section13 {
   margin: 5rem;
+  margin-left: 25%;
   width: 165%;
   font-size: 1.25em!important;
 }
 
 
+/* salmon */
+.cookbook_card .section11_salmon {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  margin: auto;
+  margin-left: 25%;;
+  margin-top: -10%;
+  font-size: 1.25em!important;
+}
+
+
+.cookbook_card .section12_salmon {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 75%;
+  margin: auto;
+  margin-top: 35%;
+  font-size: 1.25em!important;
+}
 
 /* recipe card */
 .recipe_card {
@@ -288,7 +318,6 @@ h4 {
   font-size: 2em;
   font-style: oblique;
   font-weight: bolder;
-  
 }
 .recipe_image {
  height: 400px;
@@ -303,6 +332,7 @@ h4 {
   background: var(--green);
   height: 400px;
   width: 400px;
+  font-size: 1.25rem;
   text-align: center;
   overflow: scroll !important;
 }
@@ -320,6 +350,38 @@ h4 {
   border-radius: 20px;
     -webkit-box-shadow: inset 0 0 0 1000px; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -359,4 +421,11 @@ h4 {
 #bottom .column5 {
   padding: .75rem;
 }
+
+
+
+
+
+
+
 

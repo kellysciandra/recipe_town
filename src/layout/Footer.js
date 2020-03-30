@@ -13,12 +13,12 @@ class Footer extends Component {
                     </NavItem>
 
                     <NavItem className='column2'><br></br>
-                        chefs
+                        reallygood_chefs
                       
                     </NavItem>
 
                     <NavItem className='column4'><br></br>
-                        instagram
+                    <a href='https://instagram.com/reallygood_network?igshid=16ojs1ne7nz0y' >instagram<i class="fab fa-instagram"></i></a>
                     </NavItem>
 
                     <NavItem className='column5'><br></br>

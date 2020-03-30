@@ -44,7 +44,7 @@ const PeanutButterPiePage = (props) => {
   });
 
   return (
-    <div className='mobile_height'>
+    <div>
   
       <Card className='cookbook_card'>
       <Carousel activeIndex={activeIndex} next={next} previous={previous}>
@@ -54,6 +54,7 @@ const PeanutButterPiePage = (props) => {
         <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
         </Carousel>
       <section className='section1'>
+      <CardTitle><h2>Peanut Butter Pie</h2></CardTitle><br></br>
          <CardTitle><h2>Crust</h2></CardTitle>
          <CardText>1 Package - Oreos</CardText>
          <CardText>4 Tablespoons – Butter, unsalted </CardText>
@@ -65,11 +66,11 @@ const PeanutButterPiePage = (props) => {
         <span>
         <a href='https://www.instagram.com/felschef/?igshid=y5b95mvtm9ay' ><i class="fab fa-instagram"></i></a>
         </span><br></br>
-        <small className="text-muted_update">Last updated 3 days ago</small>
+        <small className="text-muted_update">Last updated 5 hours ago</small>
         </CardText>
         </section> 
 
-      <section className='section11'>
+      <section className='section11_pbpie'>
         <CardText><h2>Filling</h2></CardText><br></br>
         <CardText>1 cup - Heavy cream</CardText>
         <CardText>8 oz. - Cream cheese (room temperature)</CardText>
@@ -90,7 +91,7 @@ const PeanutButterPiePage = (props) => {
            Approximate amounts, to taste:<br></br>
            ¼ cup – Dry roasted, salt peanuts, chopped<br></br>
            2 Tablespoons – Dark or semi-sweet chocolate shavings<br></br>
-           2 Tablespoons - Reserved Oreo Crumble<br></br>
+           2 Tablespoons - Reserved Oreo Crumble<br></br><br></br>
         </CardText>
       </section>
       </Card>

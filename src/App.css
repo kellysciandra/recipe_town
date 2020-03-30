@@ -1,5 +1,5 @@
 
-@media(max-width: 500px) {
+@media(max-width: 600px) {
   /* Stack Grid Items */
 * {
   grid-template-columns: 1fr;
@@ -97,6 +97,7 @@ border: 2px solid rgb(84, 255, 184);
 .recipe_card .recipe_section {
   height: 250px;
   width: 250px;
+  font-size: .5em;
   border: none;
 }
 
@@ -141,7 +142,7 @@ border: 2px solid rgb(84, 255, 184);
 /* cook/book */
 
 .mobile_height {
-  height: 3000px;
+  height: 3500px;
 }
 
 .cookbook_card {
@@ -199,10 +200,9 @@ border: 2px solid rgb(84, 255, 184);
 }
 
 .cookbook_card .section13 {
-  width: 250px;
-  text-align: left;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  width: 75%;
+  margin: auto;
+  margin-top: 10%;
   font-size: .9em!important;
   border-bottom: 10px solid rgb(84, 255, 184);
 }
@@ -210,6 +210,32 @@ border: 2px solid rgb(84, 255, 184);
 .cookbook_card .section13 br {
   display: initial
 }
+
+.cookbook_card .section11_salmon {
+  margin: auto;
+  margin-top: 20%;
+  text-align: center;
+  font-size: .9em!important;
+}
+.cookbook_card .section11_pbpie {
+  grid-template-columns: 1fr;
+  width: 250px;
+  text-align: center;
+  margin: auto;
+  margin-top: -25%;
+  font-size: .9em!important;
+}
+
+
+.cookbook_card .section12_salmon {
+  font-size: .9em!important;
+  margin: auto;
+  margin-top: 5%;
+  text-align: center;
+}
+
+
+
 
 
 
@@ -219,7 +245,7 @@ border: 2px solid rgb(84, 255, 184);
 /* footer */
 
 #bottom {
-  margin: auto;
+  margin-top: auto;
 }
 
 #bottom .column4, .column1, .column2 {
