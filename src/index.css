@@ -30,6 +30,7 @@ body::-webkit-scrollbar-thumb {
 
 a {
   text-decoration: none;
+  color: black
 }
 .toggler {
   border: none!important;
@@ -72,6 +73,11 @@ h3 {
   width: 50%;
   margin: auto;
   padding: 1rem
+}
+
+h4 {
+  font-weight: 1200;
+  font-size: 1.25em;
 }
 
 .far, .fab {
@@ -215,15 +221,13 @@ h3 {
 
 .cookbook_card {
   display: grid;
-
-  margin: 5rem; 
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
-  background: none;
-  height: 1025px;
-  font-size: 2em;
-  font-style: oblique;
-  font-weight: bolder;
+  grid-template-rows: repeat(4fr, 1fr);
+  padding: 1rem;
+  align-items: start;
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
 }
 
 .cookbook_image {
@@ -237,29 +241,39 @@ h3 {
 .cookbook_card .section1 {
   height: 400px;
   width: 400px;
-  margin-top: 10%;
+  margin: 5rem;
+  margin-top: 20%;;
+  font-size: 1.5em;
 }
-
 .cookbook_card .section2 {
+  margin: 5rem;
   width: 165%;
-  margin: 5rem; 
-  margin-top: -0rem;
-  font-size: .75em!important;
+  margin-top: -5%;
+  font-size: 1.25em!important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.cookbook_card .section11 {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  width: 75%;
+  margin: auto;
+  margin-top: -10%;
+  font-size: 1.25em!important;
+}
+.cookbook_card .section12 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 75%;
+  margin: auto;
+  margin-top: -10%;
+  font-size: 1.25em!important;
+}
+.cookbook_card .section13 {
+  margin: 5rem;
+  width: 165%;
+  font-size: 1.25em!important;
+}
 
 
 
@@ -279,15 +293,20 @@ h3 {
 .recipe_image {
  height: 400px;
  width: 400px;
+
+ border: 10px solid;
+ border-radius: 100%;;
 }
 
 .recipe_card .recipe_section {
-  border: 5px solid black;
+  border: 10px solid black;
   background: var(--green);
   height: 400px;
   width: 400px;
+  text-align: center;
   overflow: scroll !important;
 }
+
 
 .recipe_card .recipe_section::-webkit-scrollbar {
   color: black;
@@ -301,8 +320,6 @@ h3 {
   border-radius: 20px;
     -webkit-box-shadow: inset 0 0 0 1000px; 
 }
-
-
 
 
 

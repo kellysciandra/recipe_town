@@ -31,9 +31,16 @@ class SubmitRecipe extends Component {
       body: this.encode({ "form-name": "contact", ...this.state })
     })
     .then(() => alert("Success!"))
-      .catch(error => alert(error));
+    .catch(error => alert(error));
 
     e.preventDefault();
+    this.setState({
+      name:'',
+      email: '',
+      instagram: '',
+      recipe_name: '',
+      ingredients: ''
+    })
   };
 
   render() {

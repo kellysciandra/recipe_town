@@ -33,6 +33,11 @@ class AskChef extends Component {
       .catch(error => alert(error));
 
     e.preventDefault();
+    this.setState({
+      name:'',
+      email: '',
+      message: '',
+    })
   };
 
   render() {

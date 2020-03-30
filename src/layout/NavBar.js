@@ -31,6 +31,7 @@ const NavBar = (props) => {
           </Form> */}
         <NavbarBrand href='/' className='brand_link'> 
         Really Good
+        <NavLink href='/cookbook' className='mobile_link'>cook/book</NavLink> 
         <NavLink href='#recipe' className='mobile_link'>submit a recipe</NavLink> 
         <NavLink href='#ask' className='mobile_link'>ask a chef</NavLink> 
         </NavbarBrand> 

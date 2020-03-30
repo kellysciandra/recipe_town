@@ -12,6 +12,7 @@ class Dashboard extends Component {
           <div className="main">
             <marquee><h1>todays recipe is brought to you by @andrewF</h1></marquee>
           </div>
+          
         </header>
 
         {/* main page container */}

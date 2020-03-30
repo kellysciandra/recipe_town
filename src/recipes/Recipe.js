@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardImg, CardTitle, CardText} from 'reactstrap';
-import egg from '../img/egg.png'
+import PeanutButterPieSlice from '../img/PeanutButterPieSlice.png'
 
 
 class Recipe extends Component {
@@ -8,23 +8,24 @@ class Recipe extends Component {
     return (
       <div>
         <Card className='recipe_card'>
-        <CardImg className="recipe_image" src={egg} alt="Card image cap" />
+        <CardImg className="recipe_image" src={PeanutButterPieSlice} alt="Card image cap" />
           <section className='recipe_section'>
-          <CardTitle><h2>Hummus</h2></CardTitle>
-          <CardText>roasted oyster mushroom</CardText>
-          <CardText>grilled kale</CardText>
-          <CardText>butter toasted pine nuts</CardText>
-          <CardText>pickled fennel</CardText>
-          <CardText>lemon</CardText>
-          <CardText>chili oil</CardText>
-          <CardText>fennel fronds</CardText>
+          <CardTitle><h2>Crust</h2></CardTitle>
+          <CardText>1 Package - Oreos</CardText>
+          <CardText>4 Tablespoons – Butter, unsalted </CardText><br></br>
+          <CardText><h2>Filling</h2></CardText>
+          <CardText>1 cup - Heavy cream</CardText>
+          <CardText>8 oz. - Cream cheese (room temperature)</CardText>
+          <CardText>1 ¼ cups - Creamy peanut butter</CardText>
+          <CardText>¾ cup - Packed light brown sugar</CardText>
+          <CardText>1 Tablespoon - Pure vanilla extract</CardText>
           <CardText>
             <small className="text-muted">andrew f</small><br></br>
             <span>
-            <i class="far fa-envelope"></i>
+            <a href='mailto:afelschow@gmail.com'><i class="far fa-envelope"></i></a>
               </span>
               <span>
-              <i class="fab fa-instagram"></i>
+              <a href='https://www.instagram.com/felschef/?igshid=y5b95mvtm9ay' ><i class="fab fa-instagram"></i></a>
                 </span><br></br>
             <small className="text-muted_update">Last updated 3 mins ago</small>
           </CardText>
