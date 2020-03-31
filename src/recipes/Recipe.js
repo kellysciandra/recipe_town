@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import { Card, CardImg, CardTitle, CardText} from 'reactstrap';
 import PeanutButterPieSlice from '../img/PeanutButterPieSlice.png'
-
+import PBPieSend from '../recipe_forms/PBPieSend.js'
 
 class Recipe extends Component {
   render() {
     return (
       <div>
-        <Card className='recipe_card'>
-        <CardImg className="recipe_image" src={PeanutButterPieSlice} alt="Card image cap" />
-          <section className='recipe_section'>
+        <Card className='card'>
+        <CardImg className="picture" src={PeanutButterPieSlice} alt="Card image cap" />
+          <a href='/pbpie'>show me more</a>
+          <section className='mainbox_special'>
+          <CardTitle><h1>Peanut Butter Pie</h1></CardTitle>
           <CardTitle><h2>Crust</h2></CardTitle>
           <CardText>1 Package - Oreos</CardText>
           <CardText>4 Tablespoons – Butter, unsalted </CardText><br></br>
@@ -28,6 +30,7 @@ class Recipe extends Component {
               <a href='https://www.instagram.com/felschef/?igshid=y5b95mvtm9ay' ><i class="fab fa-instagram"></i></a>
                 </span><br></br>
             <small className="text-muted_update">Last updated 3 mins ago</small>
+            <PBPieSend/>
           </CardText>
           </section> 
       </Card>

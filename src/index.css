@@ -1,3 +1,12 @@
+/* will put image in background
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4; */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +18,16 @@ body {
   
 }
 
+:root {
+  --orange: rgb(255, 70, 58);
+  --green: rgb(84, 255, 184);
+  --neon: greenyellow;
+  --black: #2b2b2b;
+}
+
+
+/* scrollbar  */
+
 body::-webkit-scrollbar {
   width: 1.5em;
 }
@@ -19,54 +38,76 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
 }
 
-:root {
-  --orange: rgb(255, 70, 58);
-  --green: rgb(84, 255, 184);
-  --neon: greenyellow;
-  --black: #2b2b2b;
+/* scrollbar dashboard recipe */
+
+.daily .daily_section::-webkit-scrollbar {
+  color: black;
+
+}
+.daily .daily_section::-webkit-scrollbar-corner {
+  background: var(--green);
 }
 
-/* Utility */
+.daily .daily_section::-webkit-scrollbar-thumb{
+  border-radius: 20px;
+    -webkit-box-shadow: inset 0 0 0 1000px; 
+}
+
+
+/* UTILITY */
+
+/* padding */
+
+.py-1 {padding: 1.5rem 0}
+.py-2 {padding: 2rem 0}
+.py-3 {padding: 3rem 0}
+.p-1 {padding: 1.5rem 0}
+.p-2 {padding: 2rem 0}
+.p-3 {padding: 3rem 0}
 
 a {
   text-decoration: none;
   color: black
 }
-.toggler {
-  border: none!important;
-}
-
-.beats, .artist, .producer {
-  color: var(--black);
-  font-size: 5em;
-  font-style: oblique;
-  font-weight: bolder;
-
-  text-align: center;
-}
-
-.btn {
-  background: none;
-  padding: .5rem 1.5rem;
-  width: 100%;
-}
-.btn:hover {
-  background: var(--orange)
-}
-
 .link {
   color: var(--black)!important;
   font-size: 3em;
   font-style: oblique;
   font-weight: bolder;
 }
+
+.toggler {
+  border: none!important;
+}
+
+.beats{
+  color: var(--black);
+  font-size: 5em;
+  font-style: oblique;
+  font-weight: bolder;
+  text-align: center;
+}
+
+/* .btn {
+  background: none;
+  padding: .5rem 1.5rem;
+  width: 100%;
+} */
+.btn:hover {
+  background: var(--orange);
+  color: black;
+}
+
+.far, .fab {
+  margin: .25rem
+}
+
 h2 {
   font-weight: 900;
   font-size: 1.5em;
 }
 h3 {
   text-align: center;
-  justify-content: center;
   font-weight: 1000;
   font-size: 5em;
   border: 5px dotted var(--orange);
@@ -80,11 +121,7 @@ h4 {
   font-size: 1.25em;
 }
 
-.far, .fab {
-  margin: .25rem
-}
-
-/* NavBar */
+/* NAVBAR */
 
 #navbar {
   display: grid;
@@ -93,7 +130,6 @@ h4 {
   top: 0;
   margin: .5rem;
   z-index: 2;
-
 }
 
 .nav .brand_link {
@@ -105,6 +141,7 @@ h4 {
   width: 20%;
   background: var(--orange)
 }
+
 .nav .brand_link:hover {
   border: 5px solid transparent;
   transform: rotate(-10deg);
@@ -119,12 +156,11 @@ h4 {
   display: none;
 }
 
-
 /* Dashboard */
 
 /* header marquee section */
 
-.header .main {
+.dash_header .main {
   display: grid;
   grid-template-columns: 1fr;
   margin: 2rem;
@@ -133,62 +169,36 @@ h4 {
   border: 5px solid black
 }
 
-/* main page container */
 
-.showcase {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  align-content: center;
-  height: 120vh;
-  grid-gap: 2rem;
-  margin: 5rem; 
-  background: var(--orange)
+/* dashboard recipe */
+.daily {
+
+
+  grid-gap: 5rem;
+  font-size: 2em;
+
+  border: 5px solid !important;
 }
 
-.showcase .first {
-  padding: 2rem;
-  position: relative;
-  background: white;
-  height: 500px;
-}
 
-/* first */
-.showcase .first .showcase_btn1 {
-  height: 150px;
-  width: 150px;
-
-}
-.showcase .first .showcase_btn2 {
-  margin-left: 15%;
-  height: 150px;
-  width: 150px;
-}
-
-.recipe_form_card {
-  display: grid;
-  grid-template-columns: 3fr 3fr;
-  margin: auto;
-  padding: 1rem;
-  width: 75%;
-  border: 5px solid;
-}
-.recipe_input {
-  padding: .5rem;
-  margin: 1rem;
-  width: 75%
-}
-
-.recipe_form_card .recipe_form_display {
-  border: 5px solid;
-  margin: 1rem;
-  margin: auto;
+.daily .daily_image {
+  height: 400px;
   width: 400px;
-  font-size: 2.5em!important;
-  font-style: oblique;
-  font-weight: bolder;
-  text-align: center;
+  border: 10px solid;
+  border-radius: 100%;;
 }
+
+.daily .daily_section {
+  background: var(--green);
+  height: 400px;
+  width: 400px;
+  font-size: 1.25rem;
+  text-align: center;
+  overflow: scroll !important;
+}
+
+
+/* ask a chef form */
 
 .ask_form_card {
   display: grid;
@@ -215,173 +225,136 @@ h4 {
 }
 
 
-/* cookbook section */
+/* submit a recipe form */
 
-.cookbook_card {
+.recipe_form_card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4fr, 1fr);
-  padding: 1rem;
-  align-items: start;
-  width: 90%;
+  grid-template-columns: 3fr 3fr;
   margin: auto;
-  margin-top: 5%;
-}
-
-.cookbook_image {
-  height: 400px;
-  width: 400px;
-  margin: 5rem;
-  border: 10px solid;
-  border-radius: 100%;;
-}
-
-.cookbook_card .section1 {
-  height: 400px;
-  width: 400px;
-  margin: 5rem;
-  margin-top: 20%;;
-  font-size: 1.5em;
-}
-.cookbook_card .section2 {
-  margin: 5rem;
-  width: 165%;
-  margin-top: -5%;
-  font-size: 1.25em!important;
-}
-
-.cookbook_card .section11 {
-  display: grid;
-  grid-template-columns: 1fr;
   padding: 1rem;
-  margin: auto;
-  margin-top: -10%;
-  font-size: 1.25em!important;
-}
-
-.cookbook_card .section11_pbpie {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 1rem;
-  margin: auto;
-  margin-top: -10%;
-  font-size: 1.25em!important;
-}
-
-
-.cookbook_card .section12 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   width: 75%;
-  margin: auto;
-  margin-top: -10%;
-  font-size: 1.25em!important;
+  border: 5px solid;
 }
-
-.cookbook_card .section13 {
-  margin: 5rem;
-  margin-left: 25%;
-  width: 165%;
-  font-size: 1.25em!important;
-}
-
-
-/* salmon */
-.cookbook_card .section11_salmon {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 1rem;
-  margin: auto;
-  margin-left: 25%;;
-  margin-top: -10%;
-  font-size: 1.25em!important;
-}
-
-
-.cookbook_card .section12_salmon {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 75%;
-  margin: auto;
-  margin-top: 35%;
-  font-size: 1.25em!important;
-}
-
-/* recipe card */
-.recipe_card {
-  display: grid;
+.recipe_input {
+  padding: .5rem;
   margin: 1rem;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10rem;
-  background: none;
-  border: none;
-  font-size: 2em;
+  width: 75%
+}
+
+.recipe_form_card .recipe_form_display {
+  border: 5px solid;
+  margin: 1rem;
+  margin: auto;
+  width: 400px;
+  font-size: 2.5em!important;
   font-style: oblique;
   font-weight: bolder;
-}
-.recipe_image {
- height: 400px;
- width: 400px;
-
- border: 10px solid;
- border-radius: 100%;;
-}
-
-.recipe_card .recipe_section {
-  border: 10px solid black;
-  background: var(--green);
-  height: 400px;
-  width: 400px;
-  font-size: 1.25rem;
   text-align: center;
-  overflow: scroll !important;
+}
+
+/* forward recipe */
+
+.forward {
+  color: var(--green)!important;
+  margin-top: -2%;
+}
+
+.forward_email {
+background: none;
+border: none;
+font-size: 1.5em;
+color: white;
+}
+
+.forward_email:hover:click {
+  background: none;
+}
+
+.forward_button {
+  border: none;
+  color: var(--green);
+  background: none;
+  font-size: 1.5em;
 }
 
 
-.recipe_card .recipe_section::-webkit-scrollbar {
-  color: black;
-
+/* cookbook cards */
+.card {
+  display: grid;
+  grid-template-areas: 
+  'picture picture mainbox mainbox'
+  'first first second second'
+  'third third third third'
+  'fourth fourth fourth fourth';
+  justify-content: center;
+  text-align: center;
+  width: 75%;
+  margin: 10em;
+  border: none;
+  border-bottom: 10px solid var(--green);
+  border-top: 10px solid var(--green);
 }
-.recipe_card .recipe_section::-webkit-scrollbar-corner {
-  background: var(--green);
+
+.card .picture {
+  grid-area: picture;
+  margin: 1em;
+  height: 350px;
+  width: 350px;
+  border: 10px solid;
+  border-radius: 100%;
 }
 
-.recipe_card .recipe_section::-webkit-scrollbar-thumb{
-  border-radius: 20px;
-    -webkit-box-shadow: inset 0 0 0 1000px; 
+.mainbox {
+  grid-area: mainbox;
+  margin: 1em;
+  width: 350px;
+  font-size: 2em;
+}
+.mainbox_special {
+  grid-area: mainbox;
+  margin: 1em;
+  width: 350px;
+  font-size: 1em;
 }
 
+.first {
+  grid-area: first;
+  margin: 1em;
+  font-size: 1.5em;
+}
+.second {
+  grid-area: second;
+  margin: 1em;
+  font-size: 1.5em;
+}
+.third {
+  grid-area: third;
+  margin: 1em;
+  font-size: 1.5em;
+}
+.third_special {
+  grid-area: third;
+  margin: 1em;
+  margin-left: -50%;
+  margin-top: -40%;
+  font-size: 1.5em;
+}
+.third_special1 {
+  grid-area: third;
+  margin: 1em;
+  margin-left: -50%;
+  margin-top: -5%;
+  font-size: 1.5em;
+}
+.fourth {
+  margin: 1em;
+  grid-area: fourth;
+  width: 100%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.carousel {
+  max-width: 400px;
+}
 
 
 
@@ -429,3 +402,63 @@ h4 {
 
 
 
+
+/* cookbook sections */
+
+
+/* .cookbook_card .section2 {
+  margin: 5rem;
+  width: 165%;
+  margin-top: -5%;
+  font-size: 1.25em!important;
+}
+
+.cookbook_card .section11 {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  margin: auto;
+  margin-top: -10%;
+  font-size: 1.25em!important;
+}
+
+.cookbook_card .section12 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 75%;
+  margin: auto;
+  margin-top: -10%;
+  font-size: 1.25em!important;
+}
+
+.cookbook_card .section13 {
+  margin: 5rem;
+  margin-left: 25%;
+  width: 165%;
+  font-size: 1.25em!important;
+} */
+/* .cookbook_card .section_description {
+  width: 100%;
+  margin-left: 50%;
+  font-size: 1.25em!important;
+} */
+
+
+/* pbpie */
+/* .cookbook_card .section11_pbpie {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  margin: auto;
+  margin-top: -10%;
+  font-size: 1.25em!important;
+}
+
+.cookbook_card .section12_pbpie {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 75%;
+  margin: auto;
+  margin-top: 5%;
+  font-size: 1.25em!important;
+} */

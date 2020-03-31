@@ -2,22 +2,20 @@
 import React, { useState } from 'react';
 import { Card, CardImg, CardTitle, CardText, Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
 import cabbage from '../img/cabbage.jpg'
-
+import CabbageSend from '../recipe_forms/CabbageSend.js'
 
 
 
 
 const Cabbage = (props) => {
 
-
   return (
     <div>
-
-      <Card className='cookbook_card'>
-      <img className='cookbook_image'src={cabbage} alt='cabbage' />
-      <section className='section1'>
-         <CardTitle><h2>Pickled Cabbage</h2></CardTitle><br></br>
-         <CardText>.5 head – Red Cabbage, shaved</CardText>
+    
+      <Card className='card'>
+      <img className='picture'src={cabbage} alt='cabbage' />   
+      <section className='mainbox'>
+        <CardTitle><h2>Pickled Cabbage</h2></CardTitle>
         <CardText>
         <small className="text-muted">andrew f</small><br></br>
         <span>
@@ -26,41 +24,54 @@ const Cabbage = (props) => {
         <span>
         <a href='https://www.instagram.com/felschef/?igshid=y5b95mvtm9ay' ><i class="fab fa-instagram"></i></a>
         </span><br></br>
-        <small className="text-muted_update">Last updated 4 days ago</small>
+        <small className="text-muted_update">Last updated 4 days ago</small><br></br>
+        <CabbageSend />
         </CardText>
-        </section> 
+      </section> 
 
-      <section className='section11'>
-        <CardText><h2>Equipment</h2></CardText><br></br>
-        <CardText>Medium pot</CardText>
-        <CardText>Mandolin (or knife)</CardText>
-        <CardText>Cutting board</CardText>
-        <CardText>Cheesecloth</CardText>
-        <CardText>Twine</CardText>
-        <CardText>2 qt Cambro (or similar container)</CardText>
+             
+      <section className='first'>
+        <CardText><h2>Ingredients</h2></CardText>
+          <CardText>In a mixing bowl whisk together honey, vinegar, sesame oil, sesame seeds, red chili flakes, and cilantro. Whisk together rapidly and set aside. 
+          </CardText>
         </section>
-    
-      <section className='section12'>
-        <CardText><h2>Pickling Liquid</h2></CardText><br></br><br></br>
-        <CardText>8 oz – Red wine vinegar </CardText>
-        <CardText>8 oz – White vinegar</CardText>
-        <CardText>8 oz – Apple Cider vinegar</CardText>
-        <CardText>12 oz - Raw sugar</CardText>
-        <CardText>24 oz - Water</CardText>
-        <CardText>1 tsp -  Salt</CardText>
-        <CardText>1 T - Honey </CardText>
-        <CardText>.5 tsp - Celery seed</CardText>
-        <CardText>1 T - Yellow mustard seed</CardText>
-        <CardText>1 each – Dried chili</CardText>
-        <CardText>.25 tsp - Red pepper flake</CardText>
-        <CardText>3 each – Allspice</CardText>
-        <CardText>.5 tsp - Caraway</CardText>
-        <CardText>1 each - Clove</CardText>
-        <CardText>1 each - Bay leaf</CardText>
+
+        <section className='second'>
+        <CardText><h2>Pickling Liquid</h2></CardText>
+        <CardText>
+          8 oz – Red wine vinegar<br></br>
+          8 oz – White vinegar<br></br>
+          8 oz – Apple Cider vinegar<br></br>
+          12 oz - Raw sugar<br></br>
+          24 oz - Water<br></br>
+          1 tsp -  Salt<br></br>
+          1 T - Honey<br></br>
+          .5 tsp - Celery seed<br></br>
+          1 T - Yellow mustard seed<br></br>
+          1 each – Dried chili<br></br>
+          .25 tsp - Red pepper flake<br></br>
+          3 each – Allspice<br></br>
+          .5 tsp - Caraway<br></br>
+          1 each - Clove<br></br>
+          1 each - Bay leaf<br></br>
+        </CardText>
       </section>
-  
-      <section>
-        <CardText className='section13'>
+
+        
+      <section className='third_special'>
+        <CardText><h2>Equipment</h2></CardText>
+        <CardText>
+          Medium pot<br></br>
+          Mandolin (or knife)<br></br>
+          Cutting board<br></br>
+          Cheesecloth <br></br>
+          Twine<br></br>
+          2 qt Cambro (or similar container)<br></br>
+        </CardText>
+      </section>
+    
+      <section  className='fourth'>
+        <CardText>
            1)   Fill cheese cloth with celery seed, mustard seed, chili, red pepper flake, allspice, caraway, clove, and bay leaf to make a sachet. Tie off with twine.<br></br>
            2)   Combine all remaining ingredients, except cabbage, into a pot. Add sachet.<br></br>
            3)   Using a mandolin or sharp knife, shave cabbage into thin (1/8”) pieces.<br></br>
@@ -68,7 +79,7 @@ const Cabbage = (props) => {
            5)   Carefully remove sachet and pour pickling liquid over cabbage.<br></br>
            6)   Cool rapidly. Store for up to three months.<br></br><br></br>
         </CardText>
-      </section>
+        </section>
       </Card>
     </div>
     
@@ -76,6 +87,7 @@ const Cabbage = (props) => {
 }
 
 export default Cabbage;
+
 
 
 

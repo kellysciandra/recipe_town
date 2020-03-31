@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 
-import PeanutButterPiePage from './PeanutButterPiePage.js'
-import Cabbage from './Cabbage.js'
-import Pasta from './Pasta.js'
-import Salmon from './Salmon.js'
+
+import PeanutButterPiePage from '../recipes/PeanutButterPiePage.js'
+import Cabbage from '../recipes/Cabbage.js'
+import Pasta from '../recipes/Pasta.js'
+import Salmon from '../recipes/Salmon.js'
+import Test from '../recipes/Test.js'
+
 
 
 const CookBook = () => {
