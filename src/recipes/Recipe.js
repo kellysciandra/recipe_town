@@ -9,7 +9,7 @@ class Recipe extends Component {
       <div>
         <Card className='card'>
         <CardImg className="picture" src={PeanutButterPieSlice} alt="Card image cap" />
-          <a href='/pbpie'>show me more</a>
+          {/* <a href='/pbpie'>show me more</a> */}
           <section className='mainbox_special'>
           <CardTitle><h1>Peanut Butter Pie</h1></CardTitle>
           <CardTitle><h2>Crust</h2></CardTitle>

@@ -172,11 +172,8 @@ h4 {
 
 /* dashboard recipe */
 .daily {
-
-
   grid-gap: 5rem;
   font-size: 2em;
-
   border: 5px solid !important;
 }
 
