@@ -17,7 +17,7 @@ class Dashboard extends Component {
 
         {/* main page container */}
         <section >
-        <a href='/beats'><h1 className='beats'>--- Recipe's ---</h1></a>
+       <h1 className='beats'>--- latest ---</h1>
         <Recipe/>
         </section>
         <SubmitRecipe /><br></br>

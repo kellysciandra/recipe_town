@@ -171,27 +171,13 @@ h4 {
 
 
 /* dashboard recipe */
-.daily {
-  grid-gap: 5rem;
+
+
+.more {
   font-size: 2em;
-  border: 5px solid !important;
-}
-
-
-.daily .daily_image {
-  height: 400px;
-  width: 400px;
-  border: 10px solid;
-  border-radius: 100%;;
-}
-
-.daily .daily_section {
-  background: var(--green);
-  height: 400px;
-  width: 400px;
-  font-size: 1.25rem;
-  text-align: center;
-  overflow: scroll !important;
+  margin-top: -75%;
+  margin-left: 50%;
+  width: 100%;
 }
 
 

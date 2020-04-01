@@ -34,6 +34,9 @@ br {
 .beats {
   display: none;
 }
+img {
+  vertical-align: none;
+}
 
 /* navbar */
 
@@ -129,7 +132,6 @@ border: 2px solid rgb(84, 255, 184);
 /* cook/book */
 
 .mobile_height {
- 
 }
 
 .forward {
@@ -164,14 +166,14 @@ color: white;
   'second'
   'third'
   'fourth';
-  margin: 5rem;
+  margin: 5em;
+  width: 100%;
   border: none;
-  border-bottom: 10px solid var(--green);
-  border-top: 10px solid var(--green);
 }
 
 .card .picture {
   grid-area: picture;
+  margin: 1em;
   height: 150px;
   width: 150px;
   border: 10px solid;
@@ -194,40 +196,41 @@ color: white;
 
 .first {
   grid-area: first;
-  margin: 1rem;
-  margin: 1em;
+  margin-left: -15em;
   font-size: .75em;
 }
 .second {
   grid-area: second;
-  margin: 0;
-  margin: 1em;
+  margin-left: -15em;
   font-size: .75em;
 }
 .third {
   grid-area: third;
-  margin: 1em;
+  margin-left: -5em;
   font-size: .75em;
+  width: 80%;
 }
 .third_special {
   grid-area: third;
   margin: 1em;
   margin-left: -50%;
-  margin-top: -40%;
   font-size: .75em;
 }
 .third_special1 {
   grid-area: third;
   margin: 1em;
+  margin-left: -15em;
   font-size: .75em;
 }
 .fourth {
   grid-area: fourth;
-  width: 100%;
+  width: 80%;
+  margin-left: -5em;
+  font-size: .75em;
 }
 
 .carousel {
-  max-width: 400px;
+  max-width: 175px;
 }
 
 br {

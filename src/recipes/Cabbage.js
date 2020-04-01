@@ -32,7 +32,7 @@ const Cabbage = (props) => {
              
       <section className='first'>
         <CardText><h2>Ingredients</h2></CardText>
-          <CardText>In a mixing bowl whisk together honey, vinegar, sesame oil, sesame seeds, red chili flakes, and cilantro. Whisk together rapidly and set aside. 
+          <CardText>.5 head – Red Cabbage, shaved
           </CardText>
         </section>
 
